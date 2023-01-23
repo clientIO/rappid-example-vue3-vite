@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, toRefs } from 'vue'
-import { dia, shapes, elementTools } from '@clientio/rappid';
+import { dia, shapes, elementTools } from '@clientio/rappid/rappid.js';
 
 const props = defineProps({
   msg: String
@@ -25,7 +25,7 @@ onMounted(() => {
         text: msg.value
       },
       image: {
-        xlinkHref: 'https://vuejs.org/images/logo.svg'
+        xlinkHref: 'https://via.placeholder.com/100/0000FF'
       }
     }
   });
